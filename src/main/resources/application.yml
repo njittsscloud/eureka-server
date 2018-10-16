@@ -3,7 +3,7 @@ server:
 
 eureka:
   instance:
-    hostname: tss.com
+    hostname: dev.tss.com
   client:
     register-with-eureka: false
     fetch-registry: false
