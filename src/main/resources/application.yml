@@ -1,13 +1,6 @@
-server:
-  port: 8090
-
-eureka:
-  instance:
-    hostname: dev.tss.com
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-    service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-  server:
-    enable-self-preservation: false
+spring:
+  profiles:
+    active: dev
+  application:
+    name: tss-eureka-server
+    
